@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note and Resorce</title>
+    <link rel="stylesheet" href="./styler.css"
+</head>
+<style>
+body{
+    background-color:bisque;
+}
+a{
+
+
+ text-decoration: inherit;
+ border-radius: 9999px;
+ background-color: blueviolet;
+ color: white;
+ overflow: hidden;
+ display: inline-block;
+ margin: 1rem;
+padding: .875rem 1.5rem;
+
+}
+a.has-arrow::after{
+    content: "~>";
+    margin-left: .375rem;
+    display: inline-block;
+    font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-weight: 500;
+    letter-spacing: 0em;
+    transition: transform .3s ease
+}
+a:hover{
+    background-color: white;
+    color: blueviolet;
+}
+       
+}
+span{
+    color: white;
+}
+
+</style>
+<body>
+    <!-- Notes for the refernece-->
+ <a href="https://app.notion.com/p/CSS-Introduction-2683a78e0e2280499877dcac0df77992#2683a78e0e228034ad11d55d8ed4c1d4" target="_parent" class="has-arrow"><span>Click  -> </span> Notes  of the refernece Day1 </a><br>
+<a href="https://app.notion.com/p/Box-Model-Lecture-02-2693a78e0e228042ac64e8f3f1bfca86"><span>Click  -> </span> Notes  of the refernece Day2 </a><br>
+<a href="#"><span>Click  -> </span> Notes  of the refernece Day  </a>
+<a href="https://firebase.google.com/studio" class="button has-arrow w-full xs:w-auto mt-2" target="_blank" rel="noopener noreferrer">Go to Firebase Studio</a>
+</body>
+</html>
