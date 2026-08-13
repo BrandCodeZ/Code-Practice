@@ -1,5 +1,13 @@
 #include <stdio.h>
+// How Binary Search works
 
+// For [10, 20, 30, 40, 50] searching for 40:
+
+// mid = 30 → 40 is greater → search right half.
+// mid = 40 → element found.
+
+// Time Complexity: O(log n)
+// Space Complexity: O(1) for this iterative implementation.
 int main() {
     int arr[100], n, key;
     int low, high, mid;
@@ -45,3 +53,4 @@ int main() {
 
     return 0;
 }
+
