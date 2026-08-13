@@ -45,3 +45,17 @@ int main()
 
     return 0;
 }
+// Recursion logic
+
+// The important part is:
+
+// if (arr[mid] < key)
+//     return binarySearch(arr, mid + 1, high, key);
+// else
+//     return binarySearch(arr, low, mid - 1, key);
+
+// Each recursive call reduces the search space to half, so:
+
+// Time Complexity: O(log n)
+// Space Complexity: O(log n) because of the recursive call stack.
+// Condition: Array must be sorted.
