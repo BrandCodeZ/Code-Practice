@@ -1,0 +1,24 @@
+h1{
+    background-color: aqua;
+}
+
+/* #firstId{
+    background-color: pink !important
+
+} */
+
+/* #firstId{
+    background-color: yellow;
+    background-color: wheat;
+} */
+
+h3{
+    background-color: #ff00ff;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-right: 50px;
+    margin: 30px;
+    align-items: center;
+    content: "Gii is sunadakds mfshifshflksffj oijfkjslfd kjsdlkdfjlksdjf ksdfjlkfjslfjjflksfkjkjm lkjslkfjjslkokj" ;
+}

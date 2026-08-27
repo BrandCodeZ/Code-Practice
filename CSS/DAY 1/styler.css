@@ -1,0 +1,123 @@
++/* Element -  Selector */
+/* h1{
+    background-color: aquamarine;
+    font-size: 50px;
+}
+
+h2{
+    background-color: black;
+    color: aliceblue;
+    border-color: blue;
+    border-radius: 9px;
+    
+} */
+
+
+
+/* id  base selecor- it ahould  be  unique to apply  on the specfic part  of  element */
+/* #first{
+    background-color: aquamarine;
+}
+
+#second{
+    background-color: yellow;
+} */
+
+
+
+/* CLASSS  SELECTOR - USED FOR GROUPING THE STYLING OF DIFFERENT ELEMNNT STYLING  */
+/*  CLASS  ANND ID  CAN BE USED AT THE SAMER   */
+/* .third{
+    background-color: blueviolet;
+}
+
+.fourth{
+    background-color: yellowgreen;
+} */
+
+
+/*  group based  selector */
+/* h1, .third, #second { 
+    background-color: violet;
+} */
+/* 
+h1{
+    background-color: rgba(19, 111, 191, 0.692); // the value of RGB - (0-255) and  transparency form o to 1
+    /* background-color: hsl(hue, saturation, lightness); hue  - color, saturation - intensity , lightness - brightness */
+    /* background-color: hsl(120,20%,50%); 
+}
+    */
+
+    
+
+/* 
+ul{
+    font-size: 10px;
+
+
+}
+ul{
+    font-size: 10px;
+}
+ol{
+    font-size: 2em; -- multiple of their parent element 
+    font-size: 2rem; -- 2 times mutilple of  their root element  -- root  html tag ka hota hai     
+
+} */
+/* html{
+    font-size: 20px;
+}
+ol{
+    font-size: 1rem; //  this will be 40 px -- 20*2 
+} */
+/* html{
+font-size: 40px;
+}
+h2{
+font-size: 3rem;
+} */
+
+/* h2{
+
+font-size: 2vw;
+}
+
+/* vw - viewport width, vh -  viewport height */
+/* 
+li{
+    font-size: 50%;
+} */
+
+h1{
+    font: size 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: #001fbd;
+    font-style: italic;
+}
+h2{
+  font-family: "Epunda Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h3{
+     font-family: "Epunda Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: yellow;
+
+}
+a{
+    background-color: rgb(4, 54, 3);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    font-style: italic;
+    text-decoration:none;
+    color: rgb(207, 255, 102);
+    
+       
+}
