@@ -1,39 +1,39 @@
-#include <stdio.h>
+#include<stdio.h>
 
 struct MinMax {
     int min;
     int max;
 };
 
-struct MinMax findMinMax(int arr[], int low, int high) {
+struct MinMax findMinMax(int arr[], int i, int j) {
     struct MinMax result, left, right;
 
     // Base case: Only one element
-    if (low == high) {
-        result.min = arr[low];
-        result.max = arr[low];
+    if (i == j) {
+        result.min = arr[i];
+        result.max = arr[i];
         return result;
     }
 
     // Base case: Two elements
-    if (high == low + 1) {
-        if (arr[low] < arr[high]) {
-            result.min = arr[low];
-            result.max = arr[high];
+    if (j == i + 1) {
+        if (arr[i] < arr[j]) {
+            result.min = arr[i];
+            result.max = arr[j];
         } else {
-            result.min = arr[high];
-            result.max = arr[low];
+            result.min = arr[j];
+            result.max = arr[i];
         }
 
         return result;
     }
 
     // Divide the array into two halves
-    int mid = (low + high) / 2;
+    int mid = (i + j) / 2;
 
     // Conquer: Find min and max in both halves
-    left = findMinMax(arr, low, mid);
-    right = findMinMax(arr, mid + 1, high);
+    left = findMinMax(arr, i, mid);
+    right = findMinMax(arr, mid + 1, j);
 
     // Combine the results
     result.min = (left.min < right.min) ? left.min : right.min;
@@ -43,7 +43,7 @@ struct MinMax findMinMax(int arr[], int low, int high) {
 }
 
 int main() {
-    int n, i;
+    int n, a;
 
     printf("Enter the number of elements: ");
     scanf("%d", &n);
@@ -52,8 +52,8 @@ int main() {
 
     printf("Enter %d elements:\n", n);
 
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    for (a = 0; a < n; a++) {
+        scanf("%d", &arr[a]);
     }
 
     struct MinMax answer = findMinMax(arr, 0, n - 1);
