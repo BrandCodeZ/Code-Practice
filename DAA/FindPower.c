@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-// Function to calculate a^n using Divide and Conquer
+
 long long power(int a, int n)
 {
-    // Base case
+   
     if (n == 0)
         return 1;
 
