@@ -1,20 +1,18 @@
 #include <stdio.h>
 
-
-long long power(int a, int n)
+int exponent(int a, int n)
 {
-   
+    int x;
+
     if (n == 0)
         return 1;
 
-    // Divide: calculate a^(n/2)
-    long long half = power(a, n / 2);
+    x = exponent(a, n / 2);
 
-    // Conquer and combine
     if (n % 2 == 0)
-        return half * half;
+        return x * x;
     else
-        return a * half * half;
+        return a * x * x;
 }
 
 int main()
@@ -24,17 +22,10 @@ int main()
     printf("Enter the base: ");
     scanf("%d", &a);
 
-    printf("Enter the power: ");
+    printf("Enter the exponent: ");
     scanf("%d", &n);
 
-    if (n < 0)
-    {
-        printf("Please enter a non-negative power.\n");
-    }
-    else
-    {
-        printf("%d^%d = %lld\n", a, n, power(a, n));
-    }
+    printf("Result = %d", exponent(a, n));
 
     return 0;
 }
