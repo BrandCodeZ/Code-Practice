@@ -1,7 +1,8 @@
 class Demo{
-    public static void main(String [] args)
+    static public void main(String [] args)
     {
         System.out.println("This is Demo File");
+        // Run after compile as  - java Demo.java Learning Java 
         System.out.println(args[0]);
         System.out.println(args[1]);
     }
