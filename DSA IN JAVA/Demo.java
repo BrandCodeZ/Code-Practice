@@ -7,9 +7,9 @@ class Demo{
     }
 }
 
-// Method To write the main method in mutiple ways
+// Method To write the main method in mutiple
 // 
 // static public void main(String []args)
 // static public void main(String args[])
 // public static void main(String args[])
-// static public void main(String ... |arg)
+// static public void main(String ... [args])
